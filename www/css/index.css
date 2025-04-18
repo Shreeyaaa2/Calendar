@@ -1,0 +1,91 @@
+@font-face {
+  font-family: varela;
+  src: url(../fonts/VarelaRound-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-family: varela;
+}
+
+.header {
+  padding-top: 12vh;
+  width: 100vw;
+  height: 18vh;
+  font-weight: 500;
+}
+
+#menu {
+  position: absolute;
+  border-radius: 100%;
+  background: transparent;
+  font-size: 3vh;
+  margin-top: 2vh;
+  margin-left: 4vw;
+}
+
+#year {
+  margin-top: 4.5vh;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  font-size: 4.5vh;
+}
+
+#month {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  font-size: 3.5vh;
+}
+
+.week, .date_holder {
+  text-align: center;
+}
+
+.date_holder {
+  height: 61.5vh;
+  box-shadow: 0 0.3vh 1vh lightgray;
+  border-bottom-left-radius: 6%;
+  border-bottom-right-radius: 6%;
+}
+
+.dates, .day {
+  width: calc(90vw/7);
+  height: calc(90vw/7);
+  border-radius: 100%;
+  margin-left: calc(1vw/7);
+  margin-top: calc((70vh - 90vw)/24);
+  background: transparent;
+}
+
+.day {
+  color: black;
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+.dates {
+  color: #444444;
+  font-size: 2.25vh;
+}
+
+button:hover {
+  background-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.1) 10%, transparent 10%);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0 0;
+  animation: ripple 0.5s;
+}
+
+@keyframes ripple {
+  from {
+    background-size: 10% 10%;
+  }
+
+  to {
+    background-size: 1000% 1000%;
+  }
+}
